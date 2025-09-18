@@ -10,7 +10,7 @@ float area1, area2;
 double PIB1, PIB2;
 int turisticos1, turisticos2;
 
-                           printf("\nCarta 1\n");
+                           printf("\nCarta 1\n\n");
 
 printf("digite uma letra de A-H para representar o seu estado:\n");
 scanf("%1s", estado1);
@@ -33,7 +33,7 @@ scanf("%lf", &PIB1);
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
 scanf("%d", &turisticos1);
 
-                          printf("\ncarta 2\n");
+                          printf("\ncarta 2\n\n");
 
 printf("digite uma letra de A-H para representar o seu estado:\n");
 scanf("%1s", estado2);
@@ -56,7 +56,7 @@ scanf("%lf", &PIB2);
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
 scanf("%d", &turisticos2);
 
-       printf("\ncarta 1\n");
+       printf("\ncarta 1\n\n");
 
 printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
@@ -65,7 +65,7 @@ printf("tamanho da cidade: %.2f Km^2\n", area1);
 printf("PIB: %.2lf bilhões de reais\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
 
-       printf("\ncarta 2\n");
+       printf("\ncarta 2\n\n");
 
 printf("codigo da cidade: %s%s\n", estado2, codigo2);
 printf("cidade: %s\n", cidade2);
