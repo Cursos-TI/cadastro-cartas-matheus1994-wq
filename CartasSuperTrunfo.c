@@ -62,7 +62,7 @@ printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
 printf("população: %ld\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
-printf("PIB: %.2lf bilhões de reais", PIB1);
+printf("PIB: %.2lf bilhões de reais\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
 
        printf("\ncarta 2\n");
