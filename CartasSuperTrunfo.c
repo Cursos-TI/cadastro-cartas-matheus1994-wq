@@ -1,15 +1,79 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+int main () { 
 
-int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+char estado1 [2], estado2 [2];
+char codigo1[4], codigo2[4];
+char cidade1[30], cidade2[30];
+long int populacao1, populacao2;
+float area1, area2;
+double PIB1, PIB2;
+int turisticos1, turisticos2;
 
-  // Área para entrada de dados
+                           printf("\nCarta 1\n");
 
-  // Área para exibição dos dados da cidade
+printf("digite uma letra de A-H para representar o seu estado:\n");
+scanf("%1s", estado1);
+
+printf("digite um codigo para sua cidade (ex. 01, 02...):\n");
+scanf("%3s", codigo1);
+
+printf("digite o nome da sua cidade:\n");
+scanf("%s", cidade1);
+
+printf("digite o tamanho da população da sua cidade:\n");
+scanf("%ld", &populacao1);
+
+printf("digite o tamanho (em km^2) da sua cidade:\n");
+scanf("%f", &area1);
+
+printf("digite o valor do produto interno bruto da sua cidade (PIB):\n");
+scanf("%lf", &PIB1); 
+
+printf("digite a quantidade de pontos turisticos da sua cidade:\n");
+scanf("%d", &turisticos1);
+
+                          printf("\ncarta 2\n");
+
+printf("digite uma letra de A-H para representar o seu estado:\n");
+scanf("%1s", estado2);
+
+printf("digite um codigo para sua cidade (ex. 01, 02...):\n");
+scanf("%3s", codigo2);
+
+printf("digite o nome da sua cidade:\n");
+scanf("%s", cidade2);
+
+printf("digite o tamanho da população da sua cidade:\n");
+scanf("%ld", &populacao2);
+
+printf("digite o tamanho (em Km^2) da sua cidade:\n");
+scanf("%f", &area2);
+
+printf("digite o valor do produto interno bruto da sua cidade (PIB):\n");
+scanf("%lf", &PIB2);
+
+printf("digite a quantidade de pontos turisticos da sua cidade:\n");
+scanf("%d", &turisticos2);
+
+       printf("\ncarta 1\n");
+
+printf("codigo da cidade: %s%s\n", estado1, codigo1);
+printf("cidade: %s\n", cidade1);
+printf("população: %ld\n", populacao1);
+printf("tamanho da cidade: %.2f Km^2\n", area1);
+printf("PIB: %.2lf bilhões de reais", PIB1);
+printf("pontos turisticos: %d\n", turisticos1);
+
+       printf("\ncarta 2\n");
+
+printf("codigo da cidade: %s%s\n", estado2, codigo2);
+printf("cidade: %s\n", cidade2);
+printf("população: %ld\n", populacao2);
+printf("tamanho da cidade: %.2f em Km^2\n", area2);
+printf("PIB: %.2lf bilhões de reais\n", PIB2);
+printf("pontos turisticos: %d\n", turisticos2);
 
 return 0;
-} 
+
+}
