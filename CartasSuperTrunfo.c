@@ -70,7 +70,7 @@ printf("pontos turisticos: %d\n", turisticos1);
 printf("codigo da cidade: %s%s\n", estado2, codigo2);
 printf("cidade: %s\n", cidade2);
 printf("população: %ld\n", populacao2);
-printf("tamanho da cidade: %.2f em Km^2\n", area2);
+printf("tamanho da cidade: %.2f Km^2\n", area2);
 printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
 
