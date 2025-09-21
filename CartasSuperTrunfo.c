@@ -7,7 +7,7 @@ long int populacao1, populacao2;
 float area1, area2;
 double PIB1, PIB2;
 int turisticos1, turisticos2;
-float densidade1, densidade2;
+double densidade1, densidade2;
 float PIBper1, PIBper2;
 
 void entradadedados() {
@@ -60,23 +60,23 @@ scanf("%d", &turisticos2);
 
 float calcularadensindadepopulacional1() { 
 
-return ((float)populacao1 / area1);
+return ((float)populacao1 / area1, densidade1);
 }
 
 double calcularPIBpercapita1() { 
 
-return ((double)PIB1 / populacao1);
+return ((double)PIB1 / populacao1, PIBper1);
 }
 
 float calcularindensidadepopulacional2() { 
 
-return ((float)populacao2 / area2);
+return ((float)populacao2 / area2,);
 }
 
 double calcularPIBpercapita2() {
 
-return ((doube) PIB2 / populacao2);
-{
+return ((double) PIB2 / populacao2,);
+}
 
 void exibirresultado() {
   
@@ -88,7 +88,9 @@ printf("população: %ld\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
 printf("PIB: %.2lf bilhões de reais\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
-
+printf("densidade populacional: %.2f\n", densidade1);
+printf("PIB per capita: %.2lf", PIBper1);
+  
        printf("\ncarta 2\n\n");
 
 printf("codigo da cidade: %s%s\n", estado2, codigo2);
@@ -97,4 +99,13 @@ printf("população: %ld\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
 printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
+printf("densidade populacional: %.2f\n", densidade2);
+printf("PIB per Capita: %.2lf\n", PIBper2);
+}
+
+int main() {
+
+entradadedados();
+exibirresultado();
+return 0;
 }
