@@ -78,6 +78,15 @@ double calcularPIBpercapita2() {
 return ((double) PIB2 / populacao2);
 }
 
+void atribuirvalorescalculados() { 
+
+densidade1 = calculardensidadepopulacional1();
+PIBper1 = calcularPIBpercapita1();
+
+densidade2 = calculardensidadepopulacional2();
+PIBper2 = calcularPIBpercapita2();
+}
+
 void exibirresultado() {
   
 printf("\ncarta 1\n\n");
@@ -106,6 +115,7 @@ printf("PIB per Capita: %.2lf\n", PIBper2);
 int main() {
 
 entradadedados();
+atribuirvalorescalculados();
 exibirresultado();
 return 0;
 }
