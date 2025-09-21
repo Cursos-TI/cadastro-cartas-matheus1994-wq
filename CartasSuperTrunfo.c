@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-int main () { 
-
 char estado1 [2], estado2 [2];
 char codigo1[4], codigo2[4];
 char cidade1[30], cidade2[30];
@@ -9,7 +7,10 @@ long int populacao1, populacao2;
 float area1, area2;
 double PIB1, PIB2;
 int turisticos1, turisticos2;
+float densidade1, densidade2;
+float PIBper1, PIBper2;
 
+void entradadedados() {
                            printf("\nCarta 1\n\n");
 
 printf("digite uma letra de A-H para representar o seu estado:\n");
@@ -55,8 +56,31 @@ scanf("%lf", &PIB2);
 
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
 scanf("%d", &turisticos2);
+}
 
-       printf("\ncarta 1\n\n");
+float calcularadensindadepopulacional1() { 
+
+return ((float)populacao1 / area1);
+}
+
+double calcularPIBpercapita1() { 
+
+return ((double)PIB1 / populacao1);
+}
+
+float calcularindensidadepopulacional2() { 
+
+return ((float)populacao2 / area2);
+}
+
+double calcularPIBpercapita2() {
+
+return ((doube) PIB2 / populacao2);
+{
+
+void exibirresultado() {
+  
+printf("\ncarta 1\n\n");
 
 printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
@@ -73,7 +97,4 @@ printf("população: %ld\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
 printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
-
-return 0;
-
 }
