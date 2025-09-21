@@ -60,22 +60,22 @@ scanf("%d", &turisticos2);
 
 float calcularadensindadepopulacional1() { 
 
-return ((float)populacao1 / area1, densidade1);
+return ((float)populacao1 / area1);
 }
 
 double calcularPIBpercapita1() { 
 
-return ((double)PIB1 / populacao1, PIBper1);
+return ((double)PIB1 / populacao1);
 }
 
 float calcularindensidadepopulacional2() { 
 
-return ((float)populacao2 / area2,);
+return ((float)populacao2 / area2);
 }
 
 double calcularPIBpercapita2() {
 
-return ((double) PIB2 / populacao2,);
+return ((double) PIB2 / populacao2);
 }
 
 void exibirresultado() {
