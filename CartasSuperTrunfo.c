@@ -20,7 +20,7 @@ printf("digite um codigo para sua cidade (ex. 01, 02...):\n");
 scanf("%3s", codigo1);
 
 printf("digite o nome da sua cidade:\n");
-scanf("%s", cidade1);
+scanf(" %[^\n]", cidade1);
 
 printf("digite o tamanho da população da sua cidade:\n");
 scanf("%ld", &populacao1);
@@ -43,7 +43,7 @@ printf("digite um codigo para sua cidade (ex. 01, 02...):\n");
 scanf("%3s", codigo2);
 
 printf("digite o nome da sua cidade:\n");
-scanf("%s", cidade2);
+scanf("%[^/n]", cidade2);
 
 printf("digite o tamanho da população da sua cidade:\n");
 scanf("%ld", &populacao2);
