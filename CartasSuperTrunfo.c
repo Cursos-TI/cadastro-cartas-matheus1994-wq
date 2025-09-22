@@ -43,7 +43,7 @@ printf("digite um codigo para sua cidade (ex. 01, 02...):\n");
 scanf("%3s", codigo2);
 
 printf("digite o nome da sua cidade:\n");
-scanf("%[^/n]", cidade2);
+scanf(" %[^\n]", cidade2); 
 
 printf("digite o tamanho da população da sua cidade:\n");
 scanf("%ld", &populacao2);
@@ -58,7 +58,7 @@ printf("digite a quantidade de pontos turisticos da sua cidade:\n");
 scanf("%d", &turisticos2);
 }
 
-float calculardensindade1() { 
+float calculardensidade1() { 
 
 return ((float)populacao1 / area1);
 }
