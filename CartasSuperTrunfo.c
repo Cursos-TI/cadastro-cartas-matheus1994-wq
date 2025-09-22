@@ -93,7 +93,7 @@ printf("\ncarta 1\n\n");
 
 printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
-printf("população: %ld\n", populacao1);
+printf("população: %ld pessoas\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
 printf("PIB: %.2lf bilhões de reais\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
@@ -104,7 +104,7 @@ printf("PIB per capita: %lf de reais\n", PIBper1);
 
 printf("codigo da cidade: %s%s\n", estado2, codigo2);
 printf("cidade: %s\n", cidade2);
-printf("população: %ld\n", populacao2);
+printf("população: %ld pessoas\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
 printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
