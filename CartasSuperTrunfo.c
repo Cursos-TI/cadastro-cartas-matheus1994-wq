@@ -65,7 +65,7 @@ return ((float)populacao1 / area1);
 
 double calcularPIBpercapita1() { 
 
-return ((double)PIB1 / populacao1);
+return ((double)PIB1 * 1000000000 / populacao1);
 }
 
 float calculardensidadepopulacional2() { 
@@ -75,7 +75,7 @@ return ((float)populacao2 / area2);
 
 double calcularPIBpercapita2() {
 
-return ((double) PIB2 / populacao2);
+return ((double) PIB2 * 1000000000 / populacao2);
 }
 
 void atribuirvalorescalculados() { 
