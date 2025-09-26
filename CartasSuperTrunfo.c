@@ -128,21 +128,18 @@ printf("\ncarta 1\n\n");
 
 printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
-printf("população: %ld pessoas\n", populacao1);
+printf("população: %lu pessoas\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
 printf("PIB: %.2lf bilhões de reais\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
 printf("densidade populacional: %.2f km^2\n", densidade1);
 printf("PIB per capita: %lf de reais\n", PIBper1);
 
-printf("\ncomparação:");
-
-  
        printf("\ncarta 2\n\n");
 
 printf("codigo da cidade: %s%s\n", estado2, codigo2);
 printf("cidade: %s\n", cidade2);
-printf("população: %ld pessoas\n", populacao2);
+printf("população: %lu pessoas\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
 printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
@@ -150,10 +147,25 @@ printf("densidade populacional: %.2f km^2\n", densidade2);
 printf("PIB per Capita: %lf de reais\n", PIBper2);
 }
 
+void exibirresultadosdacomparação() {
+
+printf("\ncomparação de cartas:\n");
+printf("população: %lu\n", populacao1 > populacao2);
+printf("area: %.0f\n", area1 > area2);
+printf("PIB: %lf\n", PIB1, PIB2);
+printf("pontos turisticos: %d\n", turisticos1 > turisticos2);
+printf("densidade populacional: %.0lf\n", densidade1 < densidade2);
+printf("PIBpercapita: %.0lf\n", PIBper1 > PIBper2);
+printf("super poder: %.0lf\n", superpoder1 > superpoder2);
+
+}
+
 int main() {
 
 entradadedados();
 atribuirvalorescalculados();
+compararcartas();
 exibirresultado();
+exibirresultadosdacomparação();
 return 0;
 }
