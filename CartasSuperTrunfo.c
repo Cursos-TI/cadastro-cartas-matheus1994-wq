@@ -134,6 +134,9 @@ printf("PIB: %.2lf bilhões de reais\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
 printf("densidade populacional: %.2f km^2\n", densidade1);
 printf("PIB per capita: %lf de reais\n", PIBper1);
+
+printf("\ncomparação:");
+
   
        printf("\ncarta 2\n\n");
 
