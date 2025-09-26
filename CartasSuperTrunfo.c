@@ -3,12 +3,13 @@
 char estado1 [2], estado2 [2];
 char codigo1[4], codigo2[4];
 char cidade1[30], cidade2[30];
-long int populacao1, populacao2;
+unsigned long int populacao1, populacao2;
 float area1, area2;
 double PIB1, PIB2;
 int turisticos1, turisticos2;
 double densidade1, densidade2;
 float PIBper1, PIBper2;
+double superpoder1, superpoder2;
 
 void entradadedados() {
                            printf("\nCarta 1\n\n");
@@ -23,7 +24,7 @@ printf("digite o nome da sua cidade:\n");
 scanf(" %[^\n]", cidade1);
 
 printf("digite o tamanho da população da sua cidade:\n");
-scanf("%ld", &populacao1);
+scanf("%lu", &populacao1);
 
 printf("digite o tamanho (em km^2) da sua cidade:\n");
 scanf("%f", &area1);
@@ -46,7 +47,7 @@ printf("digite o nome da sua cidade:\n");
 scanf(" %[^\n]", cidade2); 
 
 printf("digite o tamanho da população da sua cidade:\n");
-scanf("%ld", &populacao2);
+scanf("%lu", &populacao2);
 
 printf("digite o tamanho (em Km^2) da sua cidade:\n");
 scanf("%f", &area2);
@@ -65,7 +66,7 @@ return ((float)populacao1 / area1);
 
 double calcularPIBpercapita1() { 
 
-return ((double)PIB1 * 1000000000 / populacao1);
+return ((double)(PIB1 * 1000000000) / populacao1);
 }
 
 float calculardensidadepopulacional2() { 
@@ -75,7 +76,7 @@ return ((float)populacao2 / area2);
 
 double calcularPIBpercapita2() {
 
-return ((double) PIB2 * 1000000000 / populacao2);
+return ((double) (PIB2 * 1000000000) / populacao2);
 }
 
 void atribuirvalorescalculados() { 
@@ -86,6 +87,40 @@ PIBper1 = calcularPIBpercapita1();
 densidade2 = calculardensidadepopulacional2();
 PIBper2 = calcularPIBpercapita2();
 }
+
+double calcularsuperpoder1() { 
+
+return((double) populacao1 + area1 + PIB1 + turisticos1 + PIBper1 + (1 / densidade1));
+
+}
+
+double calcularsuperpoder2() { 
+
+return((double) populacao2 + area2 + PIB2 + turisticos2 + PIBper2 + (1 / densidade2));
+
+}
+
+void atribuirvaloresaosuperpoderes() { 
+
+superpoder1 = calcularsuperpoder1();
+
+superpoder2 = calcularsuperpoder2();
+
+}
+
+void compararcartas() { 
+
+printf("população (carta 1): %lu, população (carta 2): %lu\n", populacao1 > populacao2);
+printf("area (carta 1): %f, area (carta 2): %f\n", area1 > area2);
+printf("PIB (carta 1): %lf, PIB (carta 2): %lf\n", PIB1 > PIB2);
+printf("pontos turisticos (carta 1): %d, pontos turisticos (carta 2): %d\n", turisticos1 > turisticos2);
+printf("densidade populacional (carta 1): %lf, densidade populacional (carta 2): %lf\n", densidade1 < densidade2);
+printf("PIBpercapita (carta 1): %lf, PIBpercapita (carta 2): %lf\n", PIBper1 > PIBper2);
+printf("super poder (carta 1): %lf, super poder (carta 2): %lf\n", superpoder1 > superpoder2);
+
+}
+
+
 
 void exibirresultado() {
   
