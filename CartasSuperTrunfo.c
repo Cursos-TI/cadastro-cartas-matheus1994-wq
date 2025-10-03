@@ -154,6 +154,6 @@ entradadedados();
 atribuirvalorescalculados();
 compararcartas();
 exibirresultado();
-exibirresultadosdacomparação();
+compararcartas();
 return 0;
 }
