@@ -108,22 +108,6 @@ superpoder2 = calcularsuperpoder2();
 
 }
 
-void compararcartas() { 
-
-if (populacao1 > populacao2) { 
-
-     printf("\n a carta 1 é a vencedora!\n");
-
-} else {   
-
-     printf("\n a carta 2 é a vencedora!\n");
-     
-}
-
-
-}
-
-
 
 void exibirresultado() {
   
@@ -148,6 +132,20 @@ printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
 printf("densidade populacional: %.2f km^2\n", densidade2);
 printf("PIB per Capita: %lf de reais\n", PIBper2);
+}
+
+void compararcartas() { 
+
+if (populacao1 > populacao2) { 
+
+     printf("\n a carta 1 é a vencedora!\n");
+
+} else {   
+
+     printf("\n a carta 2 é a vencedora!\n");
+     
+}
+
 }
 
 int main() {
