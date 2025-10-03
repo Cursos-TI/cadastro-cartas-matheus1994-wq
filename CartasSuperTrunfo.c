@@ -5,7 +5,7 @@ char codigo1[4], codigo2[4];
 char cidade1[30], cidade2[30];
 unsigned long int populacao1, populacao2;
 float area1, area2;
-double PIB1, PIB2;
+long double PIB1, PIB2;
 int turisticos1, turisticos2;
 double densidade1, densidade2;
 float PIBper1, PIBper2;
@@ -30,7 +30,7 @@ printf("digite o tamanho (em km^2) da sua cidade:\n");
 scanf("%f", &area1);
 
 printf("digite o valor do produto interno bruto da sua cidade (PIB):\n");
-scanf("%lf", &PIB1); 
+scanf("%LF", &PIB1); 
 
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
 scanf("%d", &turisticos1);
@@ -53,7 +53,7 @@ printf("digite o tamanho (em Km^2) da sua cidade:\n");
 scanf("%f", &area2);
 
 printf("digite o valor do produto interno bruto da sua cidade (PIB):\n");
-scanf("%lf", &PIB2);
+scanf("%LF", &PIB2);
 
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
 scanf("%d", &turisticos2);
@@ -66,7 +66,7 @@ return ((float)populacao1 / area1);
 
 double calcularPIBpercapita1() { 
 
-return ((double)(PIB1 * 1000000000) / populacao1);
+return ((long double)(PIB1 / populacao1) );
 }
 
 float calculardensidadepopulacional2() { 
@@ -76,7 +76,7 @@ return ((float)populacao2 / area2);
 
 double calcularPIBpercapita2() {
 
-return ((double) (PIB2 * 1000000000) / populacao2);
+return ((long double) (PIB2 / populacao2));
 }
 
 void atribuirvalorescalculados() { 
@@ -110,13 +110,16 @@ superpoder2 = calcularsuperpoder2();
 
 void compararcartas() { 
 
-printf("população (carta 1): %lu, população (carta 2): %lu\n", populacao1 > populacao2);
-printf("area (carta 1): %f, area (carta 2): %f\n", area1 > area2);
-printf("PIB (carta 1): %lf, PIB (carta 2): %lf\n", PIB1 > PIB2);
-printf("pontos turisticos (carta 1): %d, pontos turisticos (carta 2): %d\n", turisticos1 > turisticos2);
-printf("densidade populacional (carta 1): %lf, densidade populacional (carta 2): %lf\n", densidade1 < densidade2);
-printf("PIBpercapita (carta 1): %lf, PIBpercapita (carta 2): %lf\n", PIBper1 > PIBper2);
-printf("super poder (carta 1): %lf, super poder (carta 2): %lf\n", superpoder1 > superpoder2);
+if (populacao1 > populacao2) { 
+
+     printf("\n a carta 1 é a vencedora!\n");
+
+} else {   
+
+     printf("\n a carta 2 é a vencedora!\n");
+     
+}
+
 
 }
 
@@ -145,19 +148,6 @@ printf("PIB: %.2lf bilhões de reais\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
 printf("densidade populacional: %.2f km^2\n", densidade2);
 printf("PIB per Capita: %lf de reais\n", PIBper2);
-}
-
-void exibirresultadosdacomparação() {
-
-printf("\ncomparação de cartas:\n");
-printf("população: %lu\n", populacao1 > populacao2);
-printf("area: %.0f\n", area1 > area2);
-printf("PIB: %lf\n", PIB1, PIB2);
-printf("pontos turisticos: %d\n", turisticos1 > turisticos2);
-printf("densidade populacional: %.0lf\n", densidade1 < densidade2);
-printf("PIBpercapita: %.0lf\n", PIBper1 > PIBper2);
-printf("super poder: %.0lf\n", superpoder1 > superpoder2);
-
 }
 
 int main() {
