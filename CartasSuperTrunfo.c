@@ -134,19 +134,30 @@ printf("densidade populacional: %.2f km^2\n", densidade2);
 printf("PIB per Capita: %lf de reais\n", PIBper2);
 }
 
+void saidadedadosfinal() { 
+
+     printf("\ncarta 1 - (%s): %lu\n", cidade1, populacao1);
+
+     printf("carta 2 - (%s): %lu\n", cidade2, populacao2);
+
+
+}
+
 void compararcartas() { 
 
 if (populacao1 > populacao2) { 
 
-     printf("\n a carta 1 é a vencedora!\n");
+     printf("resultado: carta 1 (%s) venceu!\n", cidade1);
 
 } else {   
 
-     printf("\n a carta 2 é a vencedora!\n");
+     printf("resultado: carta 2 (%s) venceu!\n", cidade2);
      
 }
 
 }
+
+
 
 int main() {
 
@@ -154,6 +165,8 @@ entradadedados();
 atribuirvalorescalculados();
 compararcartas();
 exibirresultado();
+saidadedadosfinal();
 compararcartas();
+
 return 0;
 }
