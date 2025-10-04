@@ -9,7 +9,7 @@ long double PIB1, PIB2;
 int turisticos1, turisticos2;
 double densidade1, densidade2;
 float PIBper1, PIBper2;
-double superpoder1, superpoder2;
+long double superpoder1, superpoder2;
 
 void entradadedados() {
                            printf("\nCarta 1\n\n");
@@ -64,7 +64,7 @@ float calculardensidade1() {
 return ((float)populacao1 / area1);
 }
 
-double calcularPIBpercapita1() { 
+long double calcularPIBpercapita1() { 
 
 return ((long double)(PIB1 / populacao1) );
 }
@@ -74,7 +74,7 @@ float calculardensidadepopulacional2() {
 return ((float)populacao2 / area2);
 }
 
-double calcularPIBpercapita2() {
+long double calcularPIBpercapita2() {
 
 return ((long double) (PIB2 / populacao2));
 }
@@ -88,15 +88,15 @@ densidade2 = calculardensidadepopulacional2();
 PIBper2 = calcularPIBpercapita2();
 }
 
-double calcularsuperpoder1() { 
+long double calcularsuperpoder1() { 
 
-return((double) populacao1 + area1 + PIB1 + turisticos1 + PIBper1 + (1 / densidade1));
+return((long double) populacao1 + area1 + PIB1 + turisticos1 + PIBper1 + (1 / densidade1));
 
 }
 
-double calcularsuperpoder2() { 
+long double calcularsuperpoder2() { 
 
-return((double) populacao2 + area2 + PIB2 + turisticos2 + PIBper2 + (1 / densidade2));
+return((long double) populacao2 + area2 + PIB2 + turisticos2 + PIBper2 + (1 / densidade2));
 
 }
 
@@ -117,10 +117,10 @@ printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
 printf("população: %lu pessoas\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
-printf("PIB: %.2LF bilhões de reais\n", PIB1);
+printf("PIB: %LF\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
-printf("densidade populacional: %.2f km^2\n", densidade1);
-printf("PIB per capita: %lf de reais\n", PIBper1);
+printf("densidade populacional: %f quantidade por km^2\n", densidade1);
+printf("PIB per capita: %f de reais\n", PIBper1);
 
        printf("\ncarta 2\n\n");
 
@@ -128,10 +128,10 @@ printf("codigo da cidade: %s%s\n", estado2, codigo2);
 printf("cidade: %s\n", cidade2);
 printf("população: %lu pessoas\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
-printf("PIB: %.2LF bilhões de reais\n", PIB2);
+printf("PIB: %LF\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
-printf("densidade populacional: %.2f km^2\n", densidade2);
-printf("PIB per Capita: %lf de reais\n", PIBper2);
+printf("densidade populacional: %f quantidade por km^2\n", densidade2);
+printf("PIB per Capita: %f de reais\n", PIBper2);
 }
 
 void saidadedadosfinal() { 
