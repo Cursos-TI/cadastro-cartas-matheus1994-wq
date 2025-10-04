@@ -143,7 +143,7 @@ void saidadedadosfinal() {
 
 }
 
-void compararcartas() { 
+void compararcartasfinais() { 
 
 if (populacao1 > populacao2) { 
 
@@ -166,7 +166,7 @@ atribuirvalorescalculados();
 compararcartas();
 exibirresultado();
 saidadedadosfinal();
-compararcartas();
+compararcartasfinais();
 
 return 0;
 }
