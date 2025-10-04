@@ -30,10 +30,10 @@ printf("digite o tamanho (em km^2) da sua cidade:\n");
 scanf("%f", &area1);
 
 printf("digite o valor do produto interno bruto da sua cidade (PIB):\n");
-scanf("%LF", &PIB1); 
+scanf(" %Lf", &PIB1); 
 
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
-scanf("%d", &turisticos1);
+scanf(" %d", &turisticos1);
 
                           printf("\ncarta 2\n\n");
 
@@ -53,10 +53,10 @@ printf("digite o tamanho (em Km^2) da sua cidade:\n");
 scanf("%f", &area2);
 
 printf("digite o valor do produto interno bruto da sua cidade (PIB):\n");
-scanf("%LF", &PIB2);
+scanf(" %Lf", &PIB2);
 
 printf("digite a quantidade de pontos turisticos da sua cidade:\n");
-scanf("%d", &turisticos2);
+scanf(" %d", &turisticos2);
 }
 
 float calculardensidade1() { 
@@ -117,7 +117,7 @@ printf("codigo da cidade: %s%s\n", estado1, codigo1);
 printf("cidade: %s\n", cidade1);
 printf("população: %lu pessoas\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
-printf("PIB: %LF\n", PIB1);
+printf("PIB: %lF\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
 printf("densidade populacional: %f quantidade por km^2\n", densidade1);
 printf("PIB per capita: %f de reais\n", PIBper1);
@@ -128,10 +128,10 @@ printf("codigo da cidade: %s%s\n", estado2, codigo2);
 printf("cidade: %s\n", cidade2);
 printf("população: %lu pessoas\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
-printf("PIB: %LF\n", PIB2);
+printf("PIB: %lF\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
-printf("densidade populacional: %f quantidade por km^2\n", densidade2);
-printf("PIB per Capita: %f de reais\n", PIBper2);
+printf("densidade populacional: %.2f quantidade por km^2\n", densidade2);
+printf("PIB per Capita: %.2f de reais\n", PIBper2);
 }
 
 void saidadedadosfinal() { 
@@ -163,7 +163,6 @@ int main() {
 
 entradadedados();
 atribuirvalorescalculados();
-compararcartas();
 exibirresultado();
 saidadedadosfinal();
 compararcartasfinais();
