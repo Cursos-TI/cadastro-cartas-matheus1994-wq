@@ -136,7 +136,7 @@ printf("PIB per Capita: %.2f de reais\n", PIBper2);
 
 void printfparacompararcartas() { 
 
-printf("\n\n===========jogo super trunfo comparação\n");
+printf("\n===========\n\njogo super trunfo comparação\n\n");
 
 printf("1. população\n"); 
 printf("2. tamanho da cidade\n");
@@ -156,15 +156,15 @@ switch (comparacao) {
 
 case 1: 
 
-printf("jogador 1: %lu, jogador 2: %lu\n", populacao1, populacao2);
+printf("\n%s: %lu, %s: %lu\n", cidade1, cidade2, populacao1, populacao2);
 
 if (populacao1 > populacao2) { 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s, venceu!\n", cidade1);
 
 } else if (populacao2 > populacao1) { 
 
-printf("\nparabéns jogador 2, você venceu!\n");
+printf("\n%s, venceu!\n", cidade2);
 
 } else if (populacao1 == populacao2) { 
 
@@ -176,15 +176,15 @@ break;
 
 case 2: 
 
-printf("jogador 1: %.2f, jogador 2: %.2f\n", area1, area2);
+printf("\n%s: %.2f, %s: %.2f\n", cidade1, cidade2, area1, area2);
 
 if( area1 > area2 ) { 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s, venceu!\n", cidade1);
 
 } else if (area2 > area1) { 
 
-printf("\nparabens jogador 2, você venceu!\n");
+printf("\n%s, venceu!\n", cidade2);
 
 } else if (area1 == area2 ) { 
 
@@ -196,15 +196,15 @@ break;
 
 case 3: 
 
-printf("jogador 1: %Lf, jogador 2: %Lf\n", PIB1, PIB2);
+printf("\n%s: %Lf, %s: %Lf\n", cidade1, cidade2, PIB1, PIB2);
 
 if(PIB1 > PIB2) { 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s venceu!\n", cidade1);
 
 } else if (PIB2 > PIB1) { 
 
-printf("\nparabéns jogador 2, você venceu!\n");
+printf("\n%s venceu!\n", cidade2);
 
 } else if (PIB1 == PIB2) { 
 
@@ -216,15 +216,15 @@ break;
 
 case 4: 
 
-printf("jogador 1: %d, jogador 2: %d\n",turisticos1, turisticos2);
+printf("\n%s: %d, %s: %d\n",cidade1, cidade2, turisticos1, turisticos2);
 
 if(turisticos1 > turisticos2) { 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s, venceu!\n", cidade1);
 
 } else if (turisticos2 > turisticos1) { 
 
-printf("\nparabéns jogador 2, você venceu!\n");
+printf("\n%s, venceu!\n", cidade2);
 
 } else if (turisticos1 == turisticos2) { 
 
@@ -236,15 +236,15 @@ break;
 
 case 5: 
 
-printf("jogador 1: %lf, jogador 2: %lf\n", densidade1, densidade2);
+printf("\n%s: %lf, %s: %lf\n", cidade1, cidade2, densidade1, densidade2);
 
 if(densidade1 < densidade2) { 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s, venceu!\n", cidade1);
 
 } else if (densidade2 < densidade1) { 
 
-printf("\nparabéns jogador 2, você venceu!\n");
+printf("\n%s, venceu!\n", cidade2);
 
 } else if (densidade1 == densidade2) { 
 
@@ -256,15 +256,15 @@ break;
 
 case 6: 
 
-printf("jogador 1: %.2f, jogador 2: %.2f\n", PIBper1, PIBper2);
+printf("\n%s: %.2f, %s: %.2f\n", cidade1, cidade2, PIBper1, PIBper2);
 
 if(PIBper1 > PIBper2) { 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s, venceu!\n", cidade1);
 
 } else if (PIBper2 > PIBper1) { 
 
-printf("\nparabéns jogador 2, você venceu!\n");
+printf("\n%s, venceu!\n", cidade2);
 
 } else if (PIBper1 == PIBper2) { 
 
@@ -276,15 +276,15 @@ break;
 
 case 7: 
 
-printf("jogador 1: %Lf, jogador 2: %Lf\n", superpoder1, superpoder2);
+printf("\n%s: %Lf, %s: %Lf\n", cidade1, cidade2, superpoder1, superpoder2);
 
 if(superpoder1 > superpoder2){ 
 
-printf("\nparabéns jogador 1, você venceu!\n");
+printf("\n%s, venceu!\n", cidade1);
 
 } else if (superpoder2 > superpoder1) { 
 
-printf("\nparabéns jogador 2, você venceu!\n");
+printf("\n%s, venceu!\n", cidade2);
 
 } else if (superpoder1 == superpoder2) { 
 
