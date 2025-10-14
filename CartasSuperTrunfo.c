@@ -156,7 +156,7 @@ switch (comparacao) {
 
 case 1: 
 
-printf("\n%s: %lu, %s: %lu\n", cidade1, cidade2, populacao1, populacao2);
+printf("\n%s: %lu, %s: %lu\n", cidade1, populacao1, cidade2, populacao2);
 
 if (populacao1 > populacao2) { 
 
@@ -176,7 +176,7 @@ break;
 
 case 2: 
 
-printf("\n%s: %.2f, %s: %.2f\n", cidade1, cidade2, area1, area2);
+printf("\n%s: %.2f, %s: %.2f\n", cidade1, area1, cidade2, area2);
 
 if( area1 > area2 ) { 
 
@@ -196,7 +196,7 @@ break;
 
 case 3: 
 
-printf("\n%s: %Lf, %s: %Lf\n", cidade1, cidade2, PIB1, PIB2);
+printf("\n%s: %Lf, %s: %Lf\n", cidade1, PIB1, cidade2, PIB2);
 
 if(PIB1 > PIB2) { 
 
@@ -216,7 +216,7 @@ break;
 
 case 4: 
 
-printf("\n%s: %d, %s: %d\n",cidade1, cidade2, turisticos1, turisticos2);
+printf("\n%s: %d, %s: %d\n",cidade1, turisticos1, cidade2, turisticos2);
 
 if(turisticos1 > turisticos2) { 
 
@@ -236,7 +236,7 @@ break;
 
 case 5: 
 
-printf("\n%s: %lf, %s: %lf\n", cidade1, cidade2, densidade1, densidade2);
+printf("\n%s: %lf, %s: %lf\n", cidade1, densidade1, cidade2, densidade2);
 
 if(densidade1 < densidade2) { 
 
@@ -256,7 +256,7 @@ break;
 
 case 6: 
 
-printf("\n%s: %.2f, %s: %.2f\n", cidade1, cidade2, PIBper1, PIBper2);
+printf("\n%s: %.2f, %s: %.2f\n", cidade1, PIBper1, cidade2, PIBper2);
 
 if(PIBper1 > PIBper2) { 
 
@@ -276,7 +276,7 @@ break;
 
 case 7: 
 
-printf("\n%s: %Lf, %s: %Lf\n", cidade1, cidade2, superpoder1, superpoder2);
+printf("\n%s: %Lf, %s: %Lf\n", cidade1, superpoder1, cidade2, superpoder2);
 
 if(superpoder1 > superpoder2){ 
 
