@@ -67,7 +67,7 @@ return ((float)populacao1 / area1);
 
 long double calcularPIBpercapita1() { 
 
-return ((long double) PIB1 / populacao1);
+return ((double) PIB1 / populacao1);
 }
 
 float calculardensidadepopulacional2() { 
@@ -77,7 +77,7 @@ return ((float)populacao2 / area2);
 
 long double calcularPIBpercapita2() {
 
-return ((long double) PIB2 / populacao2);
+return ((double) PIB2 / populacao2);
 }
 
 void atribuirvalorescalculados() { 
@@ -119,7 +119,7 @@ printf("população: %lu pessoas\n", populacao1);
 printf("tamanho da cidade: %.2f Km^2\n", area1);
 printf("PIB: %LF\n", PIB1);
 printf("pontos turisticos: %d\n", turisticos1);
-printf("densidade populacional: %f quantidade por km^2\n", densidade1);
+printf("densidade populacional: %.3f quantidade por km^2\n", densidade1);
 printf("PIB per capita: %f de reais\n", PIBper1);
 
        printf("\ncarta 2\n\n");
@@ -130,7 +130,7 @@ printf("população: %lu pessoas\n", populacao2);
 printf("tamanho da cidade: %.2f Km^2\n", area2);
 printf("PIB: %LF\n", PIB2);
 printf("pontos turisticos: %d\n", turisticos2);
-printf("densidade populacional: %.2f quantidade por km^2\n", densidade2);
+printf("densidade populacional: %.3f quantidade por km^2\n", densidade2);
 printf("PIB per Capita: %.2f de reais\n", PIBper2);
 }
 
@@ -236,7 +236,7 @@ break;
 
 case 5: 
 
-printf("\n%s: %lf, %s: %lf\n", cidade1, densidade1, cidade2, densidade2);
+printf("\n%s: %.3lf, %s: %.3lf\n", cidade1, densidade1, cidade2, densidade2);
 
 if(densidade1 < densidade2) { 
 
